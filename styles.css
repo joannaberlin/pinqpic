@@ -4,6 +4,7 @@ html {
 body {
 	font-family: "Quicksand", sans-serif;
 	overflow-x: hidden;
+	color: blueviolet;
 }
 a {
 	text-decoration: none;
