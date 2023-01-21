@@ -32,7 +32,7 @@ footer p {
 }
 #image {
 	width: 60vw;
-	border-radius: 0.5rem;
+	/* border-radius: 0.5rem; */
 }
 .section {
 	height: 100vh;
@@ -44,7 +44,12 @@ footer p {
 	margin-right: 20vw;
 }
 #logo {
-	color: rgb(255, 64, 153);
+	/* color: rgb(255, 64, 153); */
+	font-size: 1.5em;
+	font-family: "Dosis", sans-serif;
+}
+#logo-graphic {
+	height: 100px;
 }
 .nav-header {
 	display: flex;
@@ -55,7 +60,7 @@ footer p {
 .btns {
 	margin: 1rem;
 	padding: 0.8em;
-	font-size: 1rem;
+	font-size: 2rem;
 	border-style: none;
 	cursor: pointer;
 	color: rgb(255, 64, 153);
@@ -93,6 +98,13 @@ footer p {
 	overflow: hidden;
 	transition: var(--transition);
 	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.links-container {
+	background-color: rgb(158, 91, 91);
+	width: 80vw;
 }
 
 .show-links {
@@ -100,7 +112,8 @@ footer p {
 }
 .links a:hover {
 	/* padding-left: 1.5rem; */
-	padding: 1.5rem;
+	/* padding: 1.5rem; */
+	color: rgb(255, 6, 160);
 }
 .gallery {
 	display: flex;
