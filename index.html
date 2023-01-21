@@ -1,180 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>pinqpic</title>
-		<link rel="icon" href="images/pink-icon.png">
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="/images/pink-icon.png" />
+		<link rel="stylesheet" href="https://use.typekit.net/hsc1xzg.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			href="https://unpkg.com/splitting/dist/splitting.css"
 		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
 			rel="stylesheet"
+			href="https://unpkg.com/splitting/dist/splitting-cells.css"
 		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="styles.css" />
+		<script>
+			document.documentElement.className = 'js';
+		</script>
 	</head>
-	<body>
-		<header id="home">
-			<div>
-				<div id="logo">
-					<h1>pinqpic</h1>
-				</div>
-				
-				<nav id="nav">
-					<!-- <img src="./images/pink-icon.png" id="logo-graphic" alt="pink dot"> -->
-					<div class="links-container">		
-						<ul class="links">
-							<li>
-								<a href="#home" class="scroll-link">home</a>
-							</li>
-							<li>
-								<a href="#about" class="scroll-link">about</a>
-							</li>
-							<li>
-								<a href="#work" class="scroll-link">work</a>
-							</li>
-						</ul>
-					</div>
-					<button class="nav-toggle">
-						<i class="fas fa-bars"></i>
-					</button>
-				</nav>
+	<body class="demo-1 loading">
+		<!-- <div>
+			<div id="logo">
+				<h1>pinqpic</h1>
 			</div>
-			
-			<section class="gallery">
-				<button class="prev-btn btns">
-					<i class="fa fa-arrow-left"></i>
-				</button>
-				<section class="images-container">
-					<img src="./images/homepage/chaos_no.1.jpg" id="image" alt="pink sticks" />
-					<h4 id="title">chaos no.1</h4>
-				</section>
-				<button class="next-btn btns">
-					<i class="fa fa-arrow-right"></i>
-				</button>
-			</section>
-		</header>
-		<section id="about" class="section">
-			<h2>about</h2>
-			<p>
-				Photographer.<br></br>Amateur.<br></br>Nature lover.<br></br>
-				Simplicity believer.<br></br>Structure seeker.<br></br>Shape perpetuator.
-			</p>
-		</section>
-		<section id="work" class="section">
-			<h2>work</h2>
-			<div class="modal-images">
-				<div class="img-title-container">
-					<img
-					src="./images/nature/in the forest no.3 (3).jpg"
-					title="cat"
-					class="modal-img"
-					data-id="1"
-					alt="cat"
-					/>
-					<a href="#nature" class="links-work" id="nature-btn">nature</a>
+			<nav id="nav">
+				<div class="links-container">
+					<ul class="links">
+						<li>
+							<a href="#home" class="scroll-link">home</a>
+						</li>
+						<li>
+							<a href="#about" class="scroll-link">about</a>
+						</li>
+						<li>
+							<a href="#work" class="scroll-link">work</a>
+						</li>
+					</ul>
 				</div>
-				<div class="img-title-container">
-					<img
-					src="./images/city/berlin no.12.jpg"
-					title="cat"
-					class="modal-img"
-					data-id="1"
-					alt="cat"
-					/>
-					<a href="#city" class="links-work" id="city-btn">city</a>
+				<button class="nav-toggle">
+					<i class="fas fa-bars"></i>
+				</button>
+			</nav>
+		</div> -->
+
+		<main>
+			<div class="slider slider--bg">
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/1.jpg)"
+					></div>
 				</div>
-				<!-- <div class="img-title-container">
-					<img
-					src="./images/homepage/black_cat_white_cat.jpg"
-					title="cat"
-					class="modal-img"
-					data-id="1"
-					alt="cat"
-					/>
-					<a href="#portrait" class="links-work">portrait</a>
-				</div> -->
-				<div class="img-title-container">
-					<img
-					src="./images/shapes/sticks no.1.jpg"
-					title="cat"
-					class="modal-img"
-					data-id="1"
-					alt="cat"
-					/>
-					<a href="#shapes" class="links-work" id="shapes-btn">shapes</a>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/2.jpg)"
+					></div>
 				</div>
-		
-		</div>
-		<div class="nature-gallery">
-			<section class="gallery">
-				<button class="prev-btn-work btns">
-					<i class="fa fa-arrow-left"></i>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/3.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/4.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/5.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/6.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/7.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/8.jpg)"
+					></div>
+				</div>
+			</div>
+			<div class="slider slider--fg">
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/1small.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/2small.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/3small.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/4small.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/5small.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/6small.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/7small.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/8small.jpg)"
+					></div>
+				</div>
+			</div>
+			<div class="type">
+				<div class="type__item">No 1</div>
+				<div class="type__item">No 2</div>
+				<div class="type__item">No 3</div>
+				<div class="type__item">No 4</div>
+				<div class="type__item">No 5</div>
+				<div class="type__item">No 6</div>
+				<div class="type__item">No 7</div>
+				<div class="type__item">No 8</div>
+			</div>
+			<nav class="slider-nav">
+				<button class="unbutton slider-nav__item slider-nav__item--prev">
+					<span>Prev</span>
 				</button>
-				<section class="images-container">
-					<img src="./images/nature/chaos no.4 (1).jpg" id="image-work" class="image-gallery" alt="pink sticks" />
-					<h4 class="title" id="title-work">chaos no.1</h4>
-				</section>
-				<button class="next-btn-work btns">
-					<i class="fa fa-arrow-right"></i>
+				<button class="unbutton slider-nav__item slider-nav__item--next">
+					<span>Next</span>
 				</button>
-				<button class="close-btn btn">
-					<i class="fas fa-times"></i>
+				<button class="unbutton slider-nav__item slider-nav__item--back">
+					<span>Back</span>
 				</button>
-			</section>
-		</div>
-		<div class="city-gallery">
-			<section class="gallery">
-				<button class="prev-btn-city btns">
-					<i class="fa fa-arrow-left"></i>
-				</button>
-				<section class="images-container">
-					<img src="./images/city/berlin no.12.jpg" id="image-city" class="image-gallery" alt="buildings" />
-					<h4 class="title" id="title-city">berlin no.12</h4>
-				</section>
-				<button class="next-btn-city btns">
-					<i class="fa fa-arrow-right"></i>
-				</button>
-				<button class="close-btn-city btn">
-					<i class="fas fa-times"></i>
-				</button>
-			</section>
-		</div>
-		<div class="shapes-gallery">
-			<section class="gallery">
-				<button class="prev-btn-shapes btns">
-					<i class="fa fa-arrow-left"></i>
-				</button>
-				<section class="images-container">
-					<img src="./images/shapes/leaves no.8.jpg" id="image-shapes" class="image-gallery" alt="leaves" />
-					<h4 class="title" id="title-shapes">leaves no.8</h4>
-				</section>
-				<button class="next-btn-shapes btns">
-					<i class="fa fa-arrow-right"></i>
-				</button>
-				<button class="close-btn-shapes btn">
-					<i class="fas fa-times"></i>
-				</button>
-			</section>
-		</div>		
-		</section>
-		<footer>
-			<p>
-				copyright &#169; 2021 pinqpic by Joanna Kot
-				All rights reserved
-			</p>
-		</footer>
-		<a href="#home" class="scroll-link top-link"
-			><i class="fa fa-arrow-up"></i
-		></a>
-		<script type="module" src="app.js"></script>
+			</nav>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Observer.min.js"></script>
+		<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+		<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+		<script src="js/index.js"></script>
 	</body>
 </html>
