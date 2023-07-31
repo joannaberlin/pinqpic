@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,7 +7,7 @@
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="/images/pink-icon.png" />
 		<link rel="stylesheet" href="https://use.typekit.net/hsc1xzg.css" />
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="/styles.css" />
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/splitting/dist/splitting.css"
@@ -22,83 +22,94 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+			rel="stylesheet"
+		/>
 		<script>
 			document.documentElement.className = 'js';
 		</script>
 	</head>
-	<body class="demo-1 loading">
-		<!-- <div>
+	<body>
+		<div class="cursor"></div>
+		<div class="cursor-follower"></div>
+		<nav id="main-nav">
 			<div id="logo">
-				<h1>pinqpic</h1>
+				<a href="index.html">pinqpic</a>
 			</div>
-			<nav id="nav">
-				<div class="links-container">
-					<ul class="links">
-						<li>
-							<a href="#home" class="scroll-link">home</a>
-						</li>
-						<li>
-							<a href="#about" class="scroll-link">about</a>
-						</li>
-						<li>
-							<a href="#work" class="scroll-link">work</a>
-						</li>
-					</ul>
-				</div>
-				<button class="nav-toggle">
-					<i class="fas fa-bars"></i>
-				</button>
-			</nav>
-		</div> -->
-
+			<div class="links-wrapper">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="contact.html">Contact</a>
+			</div>
+		</nav>
 		<main>
 			<div class="slider slider--bg">
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/1.jpg)"
+						style="background-image: url(images/home/1-home-big-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/2.jpg)"
+						style="background-image: url(images/home/2-home-big-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/3.jpg)"
+						style="background-image: url(images/home/3-home-big-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/4.jpg)"
+						style="background-image: url(images/home/4-home-big-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/5.jpg)"
+						style="background-image: url(images/home/5-home-big-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/6.jpg)"
+						style="background-image: url(images/home/6-home-big-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/7.jpg)"
+						style="background-image: url(images/home/7-home-big-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/8.jpg)"
+						style="background-image: url(images/home/8-home-big-bw.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/home/9-home-big-bw.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/home/10-home-big-bw.jpg)"
 					></div>
 				</div>
 			</div>
@@ -106,75 +117,110 @@
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/1small.jpg)"
+						style="background-image: url(images/home/1-home-small-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/2small.jpg)"
+						style="background-image: url(images/home/2-home-small-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/3small.jpg)"
+						style="background-image: url(images/home/3-home-small-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/4small.jpg)"
+						style="background-image: url(images/home/4-home-small-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/5small.jpg)"
+						style="background-image: url(images/home/5-home-small-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/6small.jpg)"
+						style="background-image: url(images/home/6-home-small-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/7small.jpg)"
+						style="background-image: url(images/home/7-home-small-bw.jpg)"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						class="slider__item-inner"
-						style="background-image: url(images/8small.jpg)"
+						style="background-image: url(images/home/8-home-small-bw.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/home/9-home-small-bw.jpg)"
+					></div>
+				</div>
+				<div class="slider__item">
+					<div
+						class="slider__item-inner"
+						style="background-image: url(images/home/10-home-small-bw.jpg)"
 					></div>
 				</div>
 			</div>
 			<div class="type">
-				<div class="type__item">No. 1</div>
-				<div class="type__item">No. 2</div>
-				<div class="type__item">No. 3</div>
-				<div class="type__item">No. 4</div>
-				<div class="type__item">No. 5</div>
-				<div class="type__item">No. 6</div>
-				<div class="type__item">No. 7</div>
-				<div class="type__item">No. 8</div>
+				<div class="type__item">
+					<p>NO. 1</p>
+				</div>
+				<div class="type__item">
+					<p>NO. 2</p>
+				</div>
+				<div class="type__item">
+					<p>NO. 3</p>
+				</div>
+				<div class="type__item">
+					<p>NO. 4</p>
+				</div>
+				<div class="type__item">
+					<p>NO. 5</p>
+				</div>
+				<div class="type__item">
+					<p>NO. 6</p>
+				</div>
+				<div class="type__item">
+					<p>NO. 7</p>
+				</div>
+				<div class="type__item">
+					<p>NO. 8</p>
+				</div>
+				<div class="type__item">
+					<p>NO. 9</p>
+				</div>
+				<div class="type__item">
+					<p>NO. 10</p>
+				</div>
 			</div>
 			<nav class="slider-nav">
 				<button class="unbutton slider-nav__item slider-nav__item--prev">
-					<span>Prev</span>
+					<span>/</span>
 				</button>
 				<button class="unbutton slider-nav__item slider-nav__item--next">
-					<span>Next</span>
+					<span>\</span>
 				</button>
 			</nav>
 		</main>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Observer.min.js"></script>
 		<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 		<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-		<script src="js/index.js"></script>
+		<script type="module" src="index.js"></script>
 	</body>
 </html>
