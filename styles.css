@@ -131,7 +131,6 @@ body {
 	border: 3px solid var(--color-intense);
 	border-radius: 10px;
 	width: 90vw;
-	/* margin-left: 40px; */
 	display: flex;
 	justify-content: end;
 	align-items: center;
@@ -319,26 +318,19 @@ a.frame__demo {
 
 .type__item {
 	font-size: 4em;
-	/* font-size: clamp(7rem, 3vw, 2em); */
-	/* font-size: clamp(2rem, 1vw, 1rem); */
 	grid-area: 1 / 1 / -1 / -1;
 	opacity: 0;
-	/* line-height: 1; */
 	font-family: 'League Gothic', sans-serif;
 	position: absolute;
 }
 
 .type__item--current {
-	/* margin-top: 20px; */
-	/* margin-top: 50vh; */
-	/* height: 1px; */
 	opacity: 1;
 	text-align: center;
 	padding: 0;
 }
 
 .type__item--current p {
-	/* margin-bottom: 20vh; */
 	padding: 0;
 }
 
@@ -390,7 +382,6 @@ a.frame__demo {
 	grid-area: 1 / 1 / -1 / -1;
 	background-size: cover;
 	background-position: 50% 50%;
-	/* border-radius: 20px; */
 }
 
 .slider--bg {
@@ -449,12 +440,9 @@ a.frame__demo {
 }
 
 .slider-nav {
-	position: fixed;
+	/* position: fixed;
 	line-height: 1;
 	display: grid;
-	/* grid-template-areas: 'prev next'; */
-	/* bottom: 2;
-	right: 1; */
 	align-items: center;
 
 	z-index: 2;
@@ -463,11 +451,25 @@ a.frame__demo {
 	width: auto;
 	padding: 2rem;
 	grid-template-areas: 'prev' 'next';
-	justify-items: center;
+	justify-items: center; */
+	position: fixed;
+	width: 100%;
+	line-height: 1;
+	display: flex;
+	flex-direction: column;
+	grid-template-areas: 'prev next';
+	bottom: 50;
+	right: 50;
+	z-index: 2;
+	justify-content: center;
 }
 
 .slider-nav__right_item {
-	padding-left: 5vw;
+	padding-left: 6vw;
+}
+
+.slider-nav__left_item {
+	padding-right: 6vw;
 }
 
 .slider-nav__item {
@@ -479,7 +481,7 @@ a.frame__demo {
 .slider-nav__item span {
 	display: inline-block;
 	pointer-events: none;
-	padding: 20px;
+	padding: 20px 0;
 	font-weight: bolder;
 	font-size: 1.5rem;
 }
@@ -519,9 +521,6 @@ a.frame__demo {
 		grid-template-columns: auto auto 1fr;
 		grid-template-rows: auto auto;
 		grid-template-areas: 'title ... demos' 'credits ... ... ';
-	}
-	.slider-nav__item--prev {
-		margin-right: 3vw;
 	}
 	.slider-nav__item span {
 		font-weight: 400;
