@@ -451,10 +451,12 @@ a.frame__demo {
 .slider-nav {
 	position: fixed;
 	line-height: 1;
-	/* display: grid; */
+	display: grid;
 	/* grid-template-areas: 'prev next'; */
 	/* bottom: 2;
 	right: 1; */
+	align-items: center;
+
 	z-index: 2;
 
 	justify-content: center;
