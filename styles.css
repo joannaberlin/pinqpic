@@ -30,7 +30,11 @@ body {
 	cursor: none;
 }
 
-/* CURSOR */
+/*
+===============
+Cursor
+===============
+*/
 .cursor {
 	position: absolute;
 	background-color: var(--color-strong);
@@ -79,7 +83,11 @@ body {
 	}
 }
 
-/* NAVBAR */
+/*
+===============
+Navbar
+===============
+*/
 #main-nav {
 	height: 1.5rem;
 	position: absolute;
@@ -88,6 +96,14 @@ body {
 	display: flex;
 	width: 100vw;
 	justify-content: space-between;
+}
+
+.toggle-nav {
+	background-color: transparent;
+	border: none;
+	font-size: 2rem;
+	color: var(--color-intense);
+	margin: 2vh 5vw 0 0;
 }
 
 #logo {
@@ -136,7 +152,66 @@ body {
 	align-items: center;
 }
 
-/* HOME */
+/*
+===============
+Sidebar Mobile
+===============
+*/
+.sidebar-overlay {
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--color-intense);
+	opacity: 0;
+	z-index: 1;
+	position: fixed;
+	transition: 600ms;
+}
+.sidebar-overlay.show {
+	opacity: 1;
+	z-index: 100;
+}
+.show .sidebar-overlay {
+	transform: scale(1);
+}
+.sidebar-links {
+	list-style-type: none;
+}
+
+.sidebar-links a {
+	color: var(--color-text-dark);
+	margin: 20px;
+	font-size: 3.5em;
+	font-family: 'League Gothic', sans-serif;
+}
+
+.sidebar-links a:active {
+	color: var(--color-strong);
+}
+
+.sidebar-close {
+	border: none;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	font-size: 1.5em;
+	position: relative;
+	background-color: var(--color-text);
+	color: var(--color-bg);
+	margin: 2vh 5vw 0 0;
+}
+
+.sidebar-close__wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+
+/*
+===============
+Home Page
+===============
+*/
 /* Page Loader */
 .js .loading::before,
 .js .loading::after {
@@ -503,17 +578,11 @@ a.frame__demo {
 }
 
 @media screen and (min-width: 53em) {
-	.frame {
-		height: 100vh;
-		grid-gap: 2rem;
-		grid-template-columns: auto auto 1fr;
-		grid-template-rows: auto auto;
-		grid-template-areas: 'title ... demos' 'credits ... ... ';
-	}
 	.slider-nav__item span {
 		font-weight: 400;
 		font-size: 3rem;
 	}
+
 	.type__item {
 		font-size: 10em;
 	}
@@ -521,9 +590,18 @@ a.frame__demo {
 	.type__item--current {
 		margin-top: -70vh;
 	}
-}
-@media screen and (max-width: 662px) {
-	#main-nav {
+
+	.toggle-nav {
 		display: none;
+	}
+}
+/*TO BE CHANGED*/
+@media screen and (max-width: 53em) {
+	.nav-hide {
+		display: none;
+	}
+
+	.logo__wrapper {
+		margin: 1vh 0 0 6vw;
 	}
 }
