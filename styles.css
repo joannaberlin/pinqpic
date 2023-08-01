@@ -103,7 +103,8 @@ Navbar
 	border: none;
 	font-size: 2rem;
 	color: var(--color-intense);
-	margin: 2vh 5vw 0 0;
+	margin: 1vh 2vw 0 0;
+	cursor: pointer;
 }
 
 #logo {
@@ -167,10 +168,12 @@ Sidebar Mobile
 	z-index: 1;
 	position: fixed;
 	transition: 600ms;
+	visibility: hidden;
 }
 .sidebar-overlay.show {
 	opacity: 1;
 	z-index: 100;
+	visibility: visible;
 }
 .show .sidebar-overlay {
 	transform: scale(1);
@@ -199,7 +202,9 @@ Sidebar Mobile
 	position: relative;
 	background-color: var(--color-text);
 	color: var(--color-bg);
-	margin: 2vh 5vw 0 0;
+	margin: 1vh 2vw 0 0;
+	text-align: center;
+	cursor: pointer;
 }
 
 .sidebar-close__wrapper {
@@ -302,86 +307,6 @@ main {
 	place-items: center;
 	align-items: center;
 	z-index: 1;
-}
-
-.frame {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	color: var(--color-title);
-	padding: 1rem;
-	font-size: 13px;
-	font-weight: 600;
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-areas: 'title' 'demos' 'credits';
-	justify-content: start;
-	align-content: space-between;
-	align-items: start;
-	z-index: 100;
-	pointer-events: none;
-	grid-gap: 0.5rem;
-}
-
-.frame a {
-	pointer-events: auto;
-}
-
-.frame a:not(.frame__demo) {
-	white-space: nowrap;
-	overflow: hidden;
-	position: relative;
-}
-
-.frame a:not(.frame__demo)::before {
-	content: '';
-	height: 1px;
-	width: 100%;
-	background: currentColor;
-	position: absolute;
-	top: 90%;
-	transition: transform 0.3s;
-	transform-origin: 0% 50%;
-}
-
-.frame a:not(.frame__demo):hover::before {
-	transform: scaleX(0);
-	transform-origin: 100% 50%;
-}
-
-.frame__title {
-	grid-area: title;
-	display: flex;
-	align-items: flex-end;
-}
-
-.frame strong {
-	font-weight: 800;
-}
-
-.frame__title-main {
-	font-size: inherit;
-	margin: 0;
-	font-weight: inherit;
-}
-
-.frame__demos {
-	grid-area: demos;
-}
-
-a.frame__demo {
-	margin: 0 0 0 1rem;
-	text-decoration: none;
-}
-
-.frame__demo--current {
-	font-weight: bold;
-	color: var(--color-link-hover);
-}
-
-.frame__credits {
-	grid-area: credits;
 }
 
 .type {
@@ -602,6 +527,6 @@ a.frame__demo {
 	}
 
 	.logo__wrapper {
-		margin: 1vh 0 0 6vw;
+		margin: 1vh 0 0 3vw;
 	}
 }
