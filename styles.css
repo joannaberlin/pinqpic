@@ -318,7 +318,7 @@ a.frame__demo {
 }
 
 .type__item {
-	font-size: 10em;
+	font-size: 4em;
 	/* font-size: clamp(7rem, 3vw, 2em); */
 	/* font-size: clamp(1rem, 6vw, 5rem); */
 	grid-area: 1 / 1 / -1 / -1;
@@ -330,7 +330,7 @@ a.frame__demo {
 
 .type__item--current {
 	/* margin-top: 20px; */
-	margin-top: -70vh;
+	/* margin-top: -10vh; */
 	/* height: 1px; */
 	opacity: 1;
 	text-align: center;
@@ -527,5 +527,12 @@ a.frame__demo {
 	.slider-nav__item span {
 		font-weight: 400;
 		font-size: 3rem;
+	}
+	.type__item {
+		font-size: 10em;
+	}
+
+	.type__item--current {
+		margin-top: -70vh;
 	}
 }
