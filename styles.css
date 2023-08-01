@@ -488,7 +488,6 @@ a.frame__demo {
 
 .slider-nav__item--prev {
 	grid-area: prev;
-	margin-right: 10vw;
 }
 
 .slider-nav__item--next {
