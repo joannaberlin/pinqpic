@@ -540,4 +540,7 @@ a.frame__demo {
 	#main-nav {
 		display: none;
 	}
+	.slider-nav__item span {
+		margin: 1em;
+	}
 }
