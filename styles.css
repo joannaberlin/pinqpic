@@ -536,3 +536,8 @@ a.frame__demo {
 		margin-top: -70vh;
 	}
 }
+@media screen and (max-width: 662px) {
+	#main-nav {
+		display: none;
+	}
+}
