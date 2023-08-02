@@ -203,9 +203,14 @@ Sidebar Mobile
 	background-color: var(--color-text);
 	color: var(--color-bg);
 	margin: 1vh 2vw 0 0;
-	text-align: center;
-	place-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	cursor: pointer;
+}
+
+.sidebar-close i {
+	text-align: center;
 }
 
 .sidebar-close__wrapper {
