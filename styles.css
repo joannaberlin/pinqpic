@@ -103,7 +103,7 @@ Navbar
 	border: none;
 	font-size: 2rem;
 	color: var(--color-intense);
-	margin: 1vh 2vw 0 0;
+	margin: 1vh 1vw 0 0;
 	cursor: pointer;
 }
 
@@ -198,12 +198,13 @@ Sidebar Mobile
 	width: 3rem;
 	height: 3rem;
 	border-radius: 50%;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	position: relative;
 	background-color: var(--color-text);
 	color: var(--color-bg);
 	margin: 1vh 2vw 0 0;
 	text-align: center;
+	place-items: center;
 	cursor: pointer;
 }
 
@@ -329,6 +330,7 @@ main {
 	opacity: 1;
 	text-align: center;
 	padding: 0;
+	align-items: center;
 }
 
 .type__item--current p {
@@ -509,11 +511,11 @@ main {
 	}
 
 	.type__item {
-		font-size: 10em;
+		font-size: 6em;
 	}
 
 	.type__item--current {
-		margin-top: -70vh;
+		margin-top: -3vh;
 	}
 
 	.toggle-nav {

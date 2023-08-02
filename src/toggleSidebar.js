@@ -7,5 +7,4 @@ toggleNav.addEventListener('click', () => {
 });
 closeBtn.addEventListener('click', () => {
 	sidebarOverlay.classList.remove('show');
-	console.log('DUPA');
 });
