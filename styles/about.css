@@ -1,0 +1,83 @@
+/* Color Version */
+.logo__version {
+	border: 3px solid var(--color-strong);
+}
+
+.logo__version a {
+	color: var(--color-strong);
+}
+
+.links-wrapper__version {
+	border: 3px solid var(--color-strong);
+}
+
+.links-wrapper__version a {
+	border: 3px solid var(--color-strong);
+	color: var(--color-strong);
+
+	&:hover {
+		background-color: var(--color-strong);
+		color: var(--color-intense);
+	}
+}
+
+.toggle-nav__version {
+	color: var(--color-strong);
+}
+
+.sidebar-overlay__version {
+	background-color: var(--color-strong);
+}
+
+/* Main */
+#main-about {
+	display: grid;
+	width: 100%;
+	min-height: 100vh;
+	place-items: center;
+	align-items: center;
+	z-index: 1;
+	background-color: var(--color-intense);
+}
+
+.about-text_wrapper {
+	display: flex;
+	background-color: var(--color-bg-light);
+	color: var(--color-text-dark);
+	width: 95vw;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	position: relative;
+}
+
+.about-text_wrapper p {
+	/* font-weight: bold; */
+	line-height: 1.5;
+	padding: 0 2px;
+	font-family: 'League Gothic', sans-serif;
+	font-size: 1.4rem;
+}
+
+.about-text_wrapper mark {
+	background-color: #fff;
+}
+
+.about-heading__wrapper {
+	font-size: 5rem;
+	color: var(--color-text-dark);
+	font-family: 'League Gothic', sans-serif;
+	font-weight: lighter;
+}
+
+/*
+===============
+MEDIA QUERIES
+===============
+*/
+@media screen and (min-width: 53em) {
+}
+
+@media screen and (max-width: 53em) {
+}
