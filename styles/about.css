@@ -50,6 +50,7 @@
 	align-items: center;
 	z-index: 1;
 	position: relative;
+	margin-top: 50px;
 }
 
 .about-text_wrapper p {
@@ -62,13 +63,6 @@
 
 .about-text_wrapper mark {
 	background-color: #fff;
-}
-
-.about-heading__wrapper {
-	font-size: 5rem;
-	color: var(--color-text-dark);
-	font-family: 'League Gothic', sans-serif;
-	font-weight: lighter;
 }
 
 /*
