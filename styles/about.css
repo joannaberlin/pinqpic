@@ -33,6 +33,10 @@
 	background-color: var(--color-strong);
 }
 
+.footer__version {
+	color: var(--color-strong);
+}
+
 /* Main */
 #main-about {
 	display: grid;
@@ -54,7 +58,6 @@
 	align-items: center;
 	z-index: 1;
 	position: relative;
-	margin-top: 60px;
 }
 
 .about-text_wrapper p {
@@ -80,5 +83,9 @@ MEDIA QUERIES
 @media screen and (max-width: 53em) {
 	.cursor__version-other {
 		background-color: var(--color-intense);
+	}
+
+	.about-text_wrapper {
+		margin-top: 60px;
 	}
 }

@@ -32,6 +32,9 @@ body {
 .cursor__version {
 	background-color: var(--color-strong);
 }
+.footer__version {
+	color: var(--color-intense);
+}
 /* Page Loader */
 .js .loading::before,
 .js .loading::after {
