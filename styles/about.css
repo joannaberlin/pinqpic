@@ -35,10 +35,14 @@
 
 .footer__version {
 	color: var(--color-strong);
-	position: absolute;
-	background-color: var(--color-intense);
+	position: fixed;
 	z-index: 1000;
 	width: 100vw;
+	background-color: var(--color-intense);
+}
+
+.hide {
+	visibility: hidden;
 }
 
 /* Main */
@@ -94,5 +98,9 @@ MEDIA QUERIES
 
 	.about-text_wrapper {
 		margin-top: 60px;
+	}
+
+	.hide {
+		background-color: transparent;
 	}
 }
