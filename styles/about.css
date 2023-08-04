@@ -35,6 +35,10 @@
 
 .footer__version {
 	color: var(--color-strong);
+	position: absolute;
+	background-color: var(--color-intense);
+	z-index: 1000;
+	width: 100vw;
 }
 
 /* Main */
@@ -58,10 +62,10 @@
 	align-items: center;
 	z-index: 1;
 	position: relative;
+	margin-bottom: 30px;
 }
 
 .about-text_wrapper p {
-	/* font-weight: bold; */
 	line-height: 1.5;
 	padding: 0 2px;
 	font-family: 'League Gothic', sans-serif;
@@ -78,6 +82,9 @@ MEDIA QUERIES
 ===============
 */
 @media screen and (min-width: 53em) {
+	.about-text_wrapper {
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 53em) {

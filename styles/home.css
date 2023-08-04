@@ -34,6 +34,8 @@ body {
 }
 .footer__version {
 	color: var(--color-intense);
+	position: fixed;
+	z-index: 1000;
 }
 /* Page Loader */
 .js .loading::before,
