@@ -43,7 +43,7 @@ Cursor
 */
 .cursor {
 	position: absolute;
-	background-color: var(--color-strong);
+
 	width: 10px;
 	height: 10px;
 	border-radius: 100%;

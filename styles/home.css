@@ -28,6 +28,10 @@ body {
 .sidebar-overlay__version {
 	background-color: var(--color-intense);
 }
+
+.cursor__version {
+	background-color: var(--color-strong);
+}
 /* Page Loader */
 .js .loading::before,
 .js .loading::after {

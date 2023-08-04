@@ -29,6 +29,10 @@
 	background-color: var(--color-strong);
 }
 
+.cursor__version {
+	background-color: var(--color-strong);
+}
+
 /* Main */
 #main-about {
 	display: grid;
@@ -74,4 +78,7 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 53em) {
+	.cursor__version-other {
+		background-color: var(--color-intense);
+	}
 }
