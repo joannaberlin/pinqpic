@@ -3,7 +3,6 @@ const sidebarOverlay = document.querySelector('.sidebar-overlay');
 const closeBtn = document.querySelector('.sidebar-close');
 const cursorInside = document.querySelector('.cursor');
 const footer = document.querySelector('.footer__version');
-console.log(footer);
 
 toggleNav.addEventListener('click', () => {
 	sidebarOverlay.classList.add('show');

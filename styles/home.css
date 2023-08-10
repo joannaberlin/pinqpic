@@ -4,6 +4,13 @@ body {
 	overflow: hidden;
 }
 
+/* #img-1:hover {
+	content: url('../images/home/2-home-small-bw.jpg');
+} */
+#img-1 {
+	animation: backgroundImage 11s infinite linear;
+}
+
 /* Color Version */
 .logo__version {
 	border: 3px solid var(--color-intense);
@@ -316,6 +323,30 @@ a:focus-visible {
 	pointer-events: auto;
 	opacity: 1;
 }
+
+/*
+===============
+ANIMATIONS
+===============
+*/
+/* @keyframes backgroundImage {
+	0%,
+	100% {
+		background-image: url('../images/home/1-home-small-bw.jpg');
+	}
+	20% {
+		background-image: url('../images/home/7-home-small-bw.jpg');
+	}
+	40% {
+		background-image: url('../images/home/4-home-small-bw.jpg');
+	}
+	60% {
+		background-image: url('../images/home/5-home-small-bw.jpg');
+	}
+	80% {
+		background-image: url('../images/home/6-home-small-bw.jpg');
+	}
+} */
 /*
 ===============
 MEDIA QUERIES
