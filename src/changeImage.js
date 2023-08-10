@@ -19,16 +19,34 @@ const group4Urls = [
 
 const group1Wrapper = document.getElementById('img-1');
 const group4Wrapper = document.getElementById('img-4');
-const time = 1000;
+const time = 500;
+let timeoutId;
+let timeoutIdLoop;
 
 const changeImage = (images, container, step) => {
-	images.forEach((image, index) =>
-		setTimeout(() => {
-			container.style.backgroundImage = `url(${image})`;
-		}, step * (index + 1))
+	images.forEach(
+		(image, index) =>
+			(timeoutId = setTimeout(() => {
+				container.style.backgroundImage = `url(${image})`;
+			}, step * (index + 1)))
 	);
-	setTimeout(() => changeImage(images, container, step), step * images.length);
+	timeoutIdLoop = setTimeout(
+		() => changeImage(images, container, step),
+		step * images.length
+	);
 };
 
-changeImage(group1Urls, group1Wrapper, time);
-changeImage(group4Urls, group4Wrapper, time);
+const stopChangingImage = () => {
+	clearTimeout(timeoutId);
+	clearTimeout(timeoutIdLoop);
+};
+
+group1Wrapper.addEventListener('mouseover', () => {
+	changeImage(group1Urls, group1Wrapper, time);
+});
+group1Wrapper.addEventListener('mouseleave', () => {
+	stopChangingImage();
+});
+
+// changeImage(group1Urls, group1Wrapper, time);
+// changeImage(group4Urls, group4Wrapper, time);

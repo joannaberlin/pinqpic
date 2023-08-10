@@ -8,7 +8,7 @@ body {
 	content: url('../images/home/2-home-small-bw.jpg');
 } */
 #img-1 {
-	animation: backgroundImage 11s infinite linear;
+	animation: backgroundImage 12s infinite linear;
 }
 
 /* Color Version */
@@ -332,19 +332,19 @@ ANIMATIONS
 /* @keyframes backgroundImage {
 	0%,
 	100% {
-		background-image: url('../images/home/1-home-small-bw.jpg');
+		background-image: url('../images/home/Group-1/1-home-small-0-bw.jpg');
 	}
 	20% {
-		background-image: url('../images/home/7-home-small-bw.jpg');
+		background-image: url('../images/home/Group-1/1-home-small-1-bw.jpg');
 	}
 	40% {
-		background-image: url('../images/home/4-home-small-bw.jpg');
+		background-image: url('../images/home/Group-1/1-home-small-2-bw.jpg');
 	}
 	60% {
-		background-image: url('../images/home/5-home-small-bw.jpg');
+		background-image: url('../images/home/Group-1/1-home-small-3-bw.jpg');
 	}
 	80% {
-		background-image: url('../images/home/6-home-small-bw.jpg');
+		background-image: url('../images/home/Group-1/1-home-small-4-bw.jpg');
 	}
 } */
 /*

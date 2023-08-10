@@ -33,12 +33,3 @@ document.addEventListener('mousemove', function (e) {
 	mouseX = e.clientX;
 	mouseY = e.clientY;
 });
-
-// document.querySelector('.link').on('mouseenter', function () {
-// 	cursor.addClass('active');
-// 	follower.addClass('active');
-// });
-// document.querySelector('.link').on('mouseleave', function () {
-// 	cursor.removeClass('active');
-// 	follower.removeClass('active');
-// });

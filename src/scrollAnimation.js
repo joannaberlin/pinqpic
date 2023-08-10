@@ -254,8 +254,8 @@ const toggleTitle = (action) => {
 			duration / 2
 		);
 };
-navigation.next.addEventListener('click', () => navigate('next'));
-navigation.prev.addEventListener('click', () => navigate('prev'));
+// navigation.next.addEventListener('click', () => navigate('next'));
+// navigation.prev.addEventListener('click', () => navigate('prev'));
 
 Observer.create({
 	target: window, // can be any element (selector text is fine)
