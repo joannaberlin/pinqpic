@@ -7,17 +7,32 @@ body {
 /* #img-1:hover {
 	content: url('../images/home/2-home-small-bw.jpg');
 } */
-#img-1 {
+/* #img-1 {
 	animation: backgroundImage 12s infinite linear;
-}
+} */
 
 /* Color Version */
-.logo__version {
+/* .logo__version {
 	border: 3px solid var(--color-intense);
-}
+
+	&:hover {
+		border: 3px solid var(--color-strong);
+	}
+} */
 
 .logo__version a {
+	border: 3px solid var(--color-intense);
 	color: var(--color-intense);
+	border-radius: 10px;
+	width: 100px;
+	text-align: center;
+
+	&:hover {
+		color: var(--color-strong);
+		border: 3px solid var(--color-strong);
+		background-color: var(--color-intense);
+		transition: 700ms;
+	}
 }
 
 .links-wrapper__version {
@@ -26,6 +41,13 @@ body {
 
 .links-wrapper__version a {
 	border: 3px solid var(--color-intense);
+
+	&:hover {
+		border: 3px solid var(--color-strong);
+		background-color: var(--color-intense);
+		color: var(--color-strong);
+		transition: 700ms;
+	}
 }
 
 .toggle-nav__version {
@@ -39,6 +61,7 @@ body {
 .cursor__version {
 	background-color: var(--color-strong);
 }
+
 .footer__version {
 	color: var(--color-intense);
 	position: fixed;
@@ -74,12 +97,6 @@ body {
 	to {
 		background-color: #ccc;
 	}
-}
-
-a:hover {
-	color: var(--color-strong);
-	outline: none;
-	transition: 300ms;
 }
 
 /* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
@@ -139,7 +156,7 @@ a:focus-visible {
 }
 
 .type__item {
-	font-size: 4em;
+	font-size: 5em;
 	grid-area: 1 / 1 / -1 / -1;
 	opacity: 0;
 	font-family: 'League Gothic', sans-serif;
@@ -153,10 +170,6 @@ a:focus-visible {
 	align-items: center;
 }
 
-.type__item--current p {
-	padding: 0;
-}
-
 .char-wrap {
 	display: inline-block;
 	position: relative;
@@ -166,7 +179,7 @@ a:focus-visible {
 
 .type__item.splitting .char {
 	line-height: 1;
-	padding-top: 6em;
+	padding-top: 5em;
 }
 
 .slider {
@@ -263,11 +276,11 @@ a:focus-visible {
 }
 
 .slider-nav {
-	position: absolute;
-	width: 100%;
-	line-height: 1;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	position: absolute;
+	height: 1px;
+	line-height: 1;
 	grid-template-areas: 'prev next';
 	z-index: 2;
 	justify-content: center;
@@ -275,11 +288,11 @@ a:focus-visible {
 }
 
 .slider-nav__right_item {
-	padding-left: 6vw;
+	margin-right: 30vw;
 }
 
 .slider-nav__left_item {
-	padding-right: 6vw;
+	margin-left: 30vw;
 }
 
 .slider-nav__item {
@@ -291,9 +304,10 @@ a:focus-visible {
 .slider-nav__item span {
 	display: inline-block;
 	pointer-events: none;
-	padding: 20px 0;
-	font-weight: bolder;
-	font-size: 1.5rem;
+}
+
+.slider-nav__item i {
+	font-size: 1rem;
 }
 
 .slider-nav__item:hover {
@@ -353,21 +367,28 @@ MEDIA QUERIES
 ===============
 */
 @media screen and (min-width: 53em) {
-	.slider-nav__item span {
-		font-weight: 400;
-		font-size: 3rem;
+	.slider-nav__item i {
+		font-size: 1.1rem;
 	}
 
 	.type__item {
-		font-size: 6em;
+		font-size: 7em;
 	}
 
 	.type__item--current {
-		margin-top: -3vh;
+		margin-top: -5vh;
 	}
 
 	.toggle-nav {
 		display: none;
+	}
+
+	.slider-nav__right_item {
+		margin-right: 12vw;
+	}
+
+	.slider-nav__left_item {
+		margin-left: 12vw;
 	}
 }
 
