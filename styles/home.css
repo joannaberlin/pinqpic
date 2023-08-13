@@ -7,9 +7,9 @@ body {
 /* #img-1:hover {
 	content: url('../images/home/2-home-small-bw.jpg');
 } */
-#img-1:hover {
+/* #img-1:hover {
 	animation: backgroundImage 7s infinite linear;
-}
+} */
 
 /* Color Version */
 /* .logo__version {
@@ -343,7 +343,7 @@ a:focus-visible {
 ANIMATIONS
 ===============
 */
-@keyframes backgroundImage {
+/* @keyframes backgroundImage {
 	0%,
 	100% {
 		background-image: url('../images/home/Group-1/1-home-small-0-bw.jpg');
@@ -363,7 +363,7 @@ ANIMATIONS
 	75% {
 		background-image: url('../images/home/Group-1/1-home-small-5-bw.jpg');
 	}
-}
+} */
 /*
 ===============
 MEDIA QUERIES
