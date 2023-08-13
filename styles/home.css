@@ -7,9 +7,9 @@ body {
 /* #img-1:hover {
 	content: url('../images/home/2-home-small-bw.jpg');
 } */
-/* #img-1 {
-	animation: backgroundImage 12s infinite linear;
-} */
+#img-1:hover {
+	animation: backgroundImage 7s infinite linear;
+}
 
 /* Color Version */
 /* .logo__version {
@@ -343,24 +343,27 @@ a:focus-visible {
 ANIMATIONS
 ===============
 */
-/* @keyframes backgroundImage {
+@keyframes backgroundImage {
 	0%,
 	100% {
 		background-image: url('../images/home/Group-1/1-home-small-0-bw.jpg');
 	}
-	20% {
+	15% {
 		background-image: url('../images/home/Group-1/1-home-small-1-bw.jpg');
 	}
-	40% {
+	30% {
 		background-image: url('../images/home/Group-1/1-home-small-2-bw.jpg');
 	}
-	60% {
+	45% {
 		background-image: url('../images/home/Group-1/1-home-small-3-bw.jpg');
 	}
-	80% {
+	60% {
 		background-image: url('../images/home/Group-1/1-home-small-4-bw.jpg');
 	}
-} */
+	75% {
+		background-image: url('../images/home/Group-1/1-home-small-5-bw.jpg');
+	}
+}
 /*
 ===============
 MEDIA QUERIES
