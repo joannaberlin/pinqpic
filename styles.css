@@ -7,7 +7,7 @@
 :root {
 	--color-text: #fff;
 	--color-text-dark: #555353;
-	--color-bg: #000;
+	--color-bg: #232121;
 	--color-bg-light: #d1cfcf;
 	--color-strong: #ff61c0;
 	--color-intense: #f4f854;
@@ -16,7 +16,7 @@
 body {
 	margin: 0;
 	color: var(--color-text);
-	background-color: var(--color-strong);
+	background-color: var(--color-bg);
 	font-family: 'Abel', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
