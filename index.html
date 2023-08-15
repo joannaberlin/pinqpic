@@ -23,7 +23,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 		/>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
@@ -41,15 +41,13 @@
 		<div class="cursor cursor__version"></div>
 		<div class="cursor-follower"></div>
 		<nav id="main-nav">
-			<div class="logo__wrapper">
-				<div class="logo logo__version">
-					<a href="index.html">pinqpic</a>
-				</div>
+			<div class="logo">
+				<a href="index.html">pinqpic</a>
 			</div>
-			<button class="toggle-nav toggle-nav__version">
+			<button class="toggle-nav">
 				<i class="fas fa-bars"></i>
 			</button>
-			<div class="links-wrapper links-wrapper__version nav-hide">
+			<div class="links-wrapper nav-hide">
 				<a href="index.html">Home</a>
 				<a href="about.html">About</a>
 				<a href="gallery.html">Gallery</a>
@@ -88,98 +86,51 @@
 						style="background-image: url(images/home/5-home-big-bw.jpg)"
 					></div>
 				</div>
-				<div class="slider__item">
-					<div
-						class="slider__item-inner"
-						style="background-image: url(images/home/6-home-big-bw.jpg)"
-					></div>
-				</div>
-				<div class="slider__item">
-					<div
-						class="slider__item-inner"
-						style="background-image: url(images/home/7-home-big-bw.jpg)"
-					></div>
-				</div>
-				<div class="slider__item">
-					<div
-						class="slider__item-inner"
-						style="background-image: url(images/home/8-home-big-bw.jpg)"
-					></div>
-				</div>
-				<div class="slider__item">
-					<div
-						class="slider__item-inner"
-						style="background-image: url(images/home/9-home-big-bw.jpg)"
-					></div>
-				</div>
-				<div class="slider__item">
-					<div
-						class="slider__item-inner"
-						style="background-image: url(images/home/10-home-big-bw.jpg)"
-					></div>
-				</div>
 			</div>
 			<div class="slider slider--fg">
 				<div class="slider__item">
 					<div
 						id="img-1"
 						class="slider__item-inner"
-						style="background-image: url(images/home/1-home-small-bw.jpg)"
+						style="
+							background-image: url(images/home/Group-1/1-home-small-0-bw.jpg);
+						"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
+						id="img-2"
 						class="slider__item-inner"
-						style="background-image: url(images/home/2-home-small-bw.jpg)"
+						style="
+							background-image: url(images/home/Group-2/2-home-small-0-bw.jpg);
+						"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
+						id="img-3"
 						class="slider__item-inner"
-						style="background-image: url(images/home/3-home-small-bw.jpg)"
+						style="
+							background-image: url(images/home/Group-3/3-home-small-0-bw.jpg);
+						"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
 						id="img-4"
 						class="slider__item-inner"
-						style="background-image: url(images/home/4-home-small-bw.jpg)"
+						style="
+							background-image: url(images/home/Group-4/4-home-small-0-bw.jpg);
+						"
 					></div>
 				</div>
 				<div class="slider__item">
 					<div
+						id="img-5"
 						class="slider__item-inner"
-						style="background-image: url(images/home/5-home-small-bw.jpg)"
-					></div>
-				</div>
-				<div class="slider__item">
-					<div
-						class="slider__item-inner"
-						style="background-image: url(images/home/6-home-small-bw.jpg)"
-					></div>
-				</div>
-				<div class="slider__item">
-					<div
-						class="slider__item-inner"
-						style="background-image: url(images/home/7-home-small-bw.jpg)"
-					></div>
-				</div>
-				<div class="slider__item">
-					<div
-						class="slider__item-inner"
-						style="background-image: url(images/home/8-home-small-bw.jpg)"
-					></div>
-				</div>
-				<div class="slider__item">
-					<div
-						class="slider__item-inner"
-						style="background-image: url(images/home/9-home-small-bw.jpg)"
-					></div>
-				</div>
-				<div class="slider__item">
-					<div
-						class="slider__item-inner"
-						style="background-image: url(images/home/10-home-small-bw.jpg)"
+						style="
+							background-image: url(images/home/Group-5/5-home-small-0-bw.jpg);
+						"
 					></div>
 				</div>
 			</div>
@@ -199,21 +150,6 @@
 				<div class="type__item">
 					<p>NO. 5</p>
 				</div>
-				<div class="type__item">
-					<p>NO. 6</p>
-				</div>
-				<div class="type__item">
-					<p>NO. 7</p>
-				</div>
-				<div class="type__item">
-					<p>NO. 8</p>
-				</div>
-				<div class="type__item">
-					<p>NO. 9</p>
-				</div>
-				<div class="type__item">
-					<p>NO. 10</p>
-				</div>
 			</div>
 			<nav class="slider-nav">
 				<button
@@ -228,8 +164,11 @@
 				</button>
 			</nav>
 		</main>
-		<footer class="footer__version hide">
+		<footer class="footer">
 			<p><i class="fas fa-copyright"></i>2023, pinqpic</p>
+			<a href="https://www.instagram.com/pinqpic/" target="_blank"
+				><i class="fa-brands fa-instagram"></i
+			></a>
 		</footer>
 		<div class="sidebar">
 			<aside class="sidebar-overlay sidebar-overlay__version">

@@ -1,34 +1,6 @@
 /* Color Version */
-
-.logo__version a {
-	color: var(--color-strong);
-	border: 3px solid var(--color-strong);
-	border-radius: 10px;
-	width: 100px;
-	text-align: center;
-
-	&:hover {
-		background-color: var(--color-strong);
-		color: var(--color-intense);
-		border: 3px solid var(--color-intense);
-		transition: 700ms;
-	}
-}
-
-.links-wrapper__version {
-	border: 3px solid var(--color-strong);
-}
-
-.links-wrapper__version a {
-	border: 3px solid var(--color-strong);
-	color: var(--color-strong);
-
-	&:hover {
-		background-color: var(--color-strong);
-		color: var(--color-intense);
-		border: 3px solid var(--color-intense);
-		transition: 700ms;
-	}
+.sidebar-links a:active {
+	color: var(--color-intense);
 }
 
 .toggle-nav__version {
@@ -55,27 +27,30 @@
 	visibility: hidden;
 }
 
+.cursor__version-other {
+	background-color: var(--color-intense);
+}
 /* Main */
 #main-about {
-	display: grid;
-	width: 100%;
+	display: flex;
 	min-height: 100vh;
 	place-items: center;
 	align-items: center;
 	z-index: 1;
-	background-color: var(--color-bg);
+	background-color: var(--color-intense);
+	overflow: hidden;
 }
 
 .about-text_wrapper {
 	display: flex;
-	background-color: var(--color-bg-light);
 	color: var(--color-text-dark);
-	width: 95vw;
-	text-align: center;
+	width: auto;
+	height: auto;
+	/* background-color: var(--color-intense); */
 	justify-content: center;
 	align-items: center;
-	z-index: 1;
-	position: relative;
+	/* z-index: 1; */
+	/* position: relative; */
 }
 
 .about-text_wrapper p {
@@ -86,7 +61,7 @@
 }
 
 .about-text_wrapper mark {
-	background-color: #fff;
+	background-color: var(--color-bg-light);
 }
 
 /*
@@ -95,18 +70,12 @@ MEDIA QUERIES
 ===============
 */
 @media screen and (min-width: 53em) {
-}
-
-@media screen and (max-width: 53em) {
-	.cursor__version-other {
-		background-color: var(--color-intense);
-	}
-
 	.about-text_wrapper {
-		margin: 60px 0 40px 0;
-	}
-
-	.hide {
-		background-color: transparent;
+		width: 40vw;
+		margin: auto;
+		border: 2px solid var(--color-bg);
+		border-radius: 10px;
+		background-color: var(--color-bg-light);
+		padding: 0 10px;
 	}
 }
