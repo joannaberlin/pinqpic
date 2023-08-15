@@ -46,11 +46,8 @@
 	color: var(--color-text-dark);
 	width: auto;
 	height: auto;
-	/* background-color: var(--color-intense); */
 	justify-content: center;
 	align-items: center;
-	/* z-index: 1; */
-	/* position: relative; */
 }
 
 .about-text_wrapper p {

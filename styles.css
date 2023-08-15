@@ -151,8 +151,8 @@ Navbar
 .toggle-nav {
 	background-color: transparent;
 	border: none;
-	font-size: 1.7rem;
-	margin: 3px 3px 0 0;
+	font-size: 1.6rem;
+	margin: 2px 1px 0 0;
 	cursor: pointer;
 	color: var(--color-bg);
 }
@@ -244,8 +244,8 @@ Sidebar Mobile
 
 .sidebar-close {
 	border: none;
-	width: 2.2rem;
-	height: 2.2rem;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	font-size: 1.3em;
 	position: relative;
@@ -255,6 +255,7 @@ Sidebar Mobile
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	color: var(--color-bg);
 }
 
 .sidebar-close i {
