@@ -43,33 +43,53 @@ const group2Wrapper = document.getElementById('img-2');
 const group3Wrapper = document.getElementById('img-3');
 const group4Wrapper = document.getElementById('img-4');
 const group5Wrapper = document.getElementById('img-5');
-const time = 500;
+const time = 700;
 const currentWindowWidth = window.innerWidth;
 let timeoutId;
 let timeoutIdLoop;
 
 const changeImage = (images, container, step) => {
-	if (currentWindowWidth > 576) {
-		images.forEach(
-			(image, index) =>
-				(timeoutId = setTimeout(() => {
-					container.style.backgroundImage = `url(${image})`;
-				}, step * (index + 1)))
-		);
-		timeoutIdLoop = setTimeout(
-			() => changeImage(images, container, step),
-			step * images.length
-		);
-	}
+	images.forEach(
+		(image, index) =>
+			(timeoutId = setTimeout(() => {
+				container.style.backgroundImage = `url(${image})`;
+			}, step * (index + 1)))
+	);
+	timeoutIdLoop = setTimeout(
+		() => changeImage(images, container, step),
+		step * images.length
+	);
 };
 
-const stopChangingImage = () => {
-	if (currentWindowWidth > 576) {
-		clearTimeout(timeoutId);
-		clearTimeout(timeoutIdLoop);
-	}
-};
+// const changeImage = (images, container, step) => {
+// 	if (currentWindowWidth > 576) {
+// 		images.forEach(
+// 			(image, index) =>
+// 				(timeoutId = setTimeout(() => {
+// 					container.style.backgroundImage = `url(${image})`;
+// 				}, step * (index + 1)))
+// 		);
+// 		timeoutIdLoop = setTimeout(
+// 			() => changeImage(images, container, step),
+// 			step * images.length
+// 		);
+// 	}
+// };
 
+// const stopChangingImage = () => {
+// 	if (currentWindowWidth > 576) {
+// 		clearTimeout(timeoutId);
+// 		clearTimeout(timeoutIdLoop);
+// 	}
+// };
+
+changeImage(group1Urls, group1Wrapper, time);
+changeImage(group2Urls, group2Wrapper, time);
+changeImage(group3Urls, group3Wrapper, time);
+changeImage(group4Urls, group4Wrapper, time);
+changeImage(group5Urls, group5Wrapper, time);
+
+/*
 group1Wrapper.addEventListener('mouseover', () => {
 	changeImage(group1Urls, group1Wrapper, time);
 });
@@ -100,3 +120,4 @@ group5Wrapper.addEventListener('mouseover', () => {
 group5Wrapper.addEventListener('mouseleave', () => {
 	stopChangingImage();
 });
+*/
