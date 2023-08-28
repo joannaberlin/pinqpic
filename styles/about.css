@@ -58,7 +58,7 @@ body {
 	align-items: flex-start;
 	z-index: 1;
 	position: absolute;
-	margin-bottom: 120px;
+	margin: 70px 0 120px 0;
 }
 
 .about-text_wrapper p {
@@ -70,6 +70,13 @@ body {
 
 .about-text_wrapper mark {
 	background-color: var(--color-bg-light);
+}
+
+.about-text_wrapper h3 {
+	font-family: 'League Gothic', sans-serif;
+	line-height: 1.5;
+	font-weight: 200;
+	font-size: 1.7em;
 }
 
 .portrait-img {
@@ -145,6 +152,12 @@ MEDIA QUERIES
 	.icn-spinner-mobile {
 		animation: spin-animation 1s infinite;
 		display: inline-block;
+	}
+
+	.about-text_wrapper h3 {
+		font-size: 1.6rem;
+		padding: 0 2px;
+		letter-spacing: 1.5px;
 	}
 }
 
