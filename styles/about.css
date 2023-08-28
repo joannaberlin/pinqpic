@@ -1,3 +1,7 @@
+body {
+	overflow: hidden;
+}
+
 /* Color Version */
 .sidebar-links a:active {
 	color: var(--color-intense);

@@ -272,7 +272,7 @@ a:focus-visible {
 }
 
 .slider-nav__item:hover {
-	color: var(--color-strong);
+	color: var(--color-intense);
 }
 
 .slider-nav__item--prev {

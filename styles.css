@@ -9,8 +9,8 @@
 	--color-text-dark: #555353;
 	--color-bg: #161515;
 	--color-bg-light: #e5e2e2;
-	--color-strong: #ed63b6;
-	--color-intense: #f4f854;
+	--color-strong: #fb52b7;
+	--color-intense: #fbfe6a;
 	--transition: 500ms;
 }
 
@@ -298,7 +298,6 @@ MEDIA QUERIES
 		width: 80px;
 
 		&:hover {
-			background-color: var(--color-text-dark);
 			color: var(--color-intense);
 			transition: var(--transition);
 		}
