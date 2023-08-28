@@ -1,5 +1,7 @@
 body {
 	overflow: scroll;
+	margin: 0;
+	width: 100vw;
 }
 
 /* Color Version */
