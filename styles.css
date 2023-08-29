@@ -246,7 +246,7 @@ Sidebar Mobile
 	border: none;
 	width: 30px;
 	height: 30px;
-	border-radius: 50%;
+	border-radius: 30px;
 	font-size: 1.3em;
 	position: relative;
 	background-color: var(--color-text);
