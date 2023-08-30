@@ -1,5 +1,5 @@
 const loader = document.getElementById('preloader');
 
-window.addEventListener('load', function () {
+window.onload = function () {
 	loader.style.display = 'none';
-});
+};
