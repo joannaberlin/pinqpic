@@ -25,7 +25,6 @@ const changeImage = (images, container, step) => {
 		() => changeImage(images, container, step),
 		step * images.length
 	);
-	globalID = requestAnimationFrame(changeImage);
 };
 
-changeImage(group1Urls, group1Wrapper, time);
+window.requestAnimationFrame(changeImage(group1Urls, group1Wrapper, time));
