@@ -70,7 +70,14 @@ html {
 .text_wrapper p {
 	color: var(--color-bg);
 	text-align: center;
-	margin: 50px 0;
+}
+
+.text_wrapper p:nth-child(1) {
+	margin-bottom: 5px;
+}
+
+.text_wrapper p:nth-child(2) {
+	margin: 0;
 }
 
 .img {
