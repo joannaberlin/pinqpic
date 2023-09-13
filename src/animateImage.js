@@ -60,10 +60,8 @@ const changeImage = (images, container, step) => {
 	);
 };
 
-window.requestAnimationFrame(
-	changeImage(group1Urls, group1Wrapper, time),
-	changeImage(group2Urls, group2Wrapper, time),
-	changeImage(group3Urls, group3Wrapper, time),
-	changeImage(group4Urls, group4Wrapper, time),
-	changeImage(group5Urls, group5Wrapper, time)
-);
+changeImage(group1Urls, group1Wrapper, time);
+changeImage(group2Urls, group2Wrapper, time);
+changeImage(group3Urls, group3Wrapper, time);
+changeImage(group4Urls, group4Wrapper, time);
+changeImage(group5Urls, group5Wrapper, time);

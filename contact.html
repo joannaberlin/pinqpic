@@ -4,9 +4,118 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/styles.css" />
+		<link rel="stylesheet" href="./styles/about.css" />
 		<title>pinqpic</title>
+		<link rel="shortcut icon" href="/images/pink-icon.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<h3>Here's going to be an awesome content soon.</h3>
+		<div class="cursor cursor__version"></div>
+		<div class="cursor-follower"></div>
+		<nav id="main-nav">
+			<div class="logo">
+				<div class="logo logo__version">
+					<a href="index.html">pinqpic</a>
+				</div>
+			</div>
+			<button class="toggle-nav">
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="links-wrapper links-wrapper__version nav-hide">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="contact.html">Contact</a>
+			</div>
+		</nav>
+		<main>
+			<section id="main-about">
+				<div class="about-text_wrapper">
+					<h3>
+						<mark
+							>Welcome to creative realm of pinqpic - a Berlin based
+							photographer.
+						</mark>
+					</h3>
+					<p>
+						<mark
+							>I like exploring objects and surfaces through camera lens. It
+							helps me uncover the charm of nature's hidden stories and objects'
+							details. Another layer to my photographic explorations is human
+							body as a whole and in details.
+						</mark>
+					</p>
+					<h3>
+						<mark
+							>This website is a result of my amateur play with a camera, so
+							don't take it too seriously.</mark
+						>
+					</h3>
+				</div>
+				<div class="img_wrapper">
+					<div class="stars_wrapper">
+						<img
+							src="./images/star-pink.png"
+							alt="pink circle"
+							class="icn-spinner icn-spinner-mobile"
+						/>
+						<img
+							src="./images/star-pink.png"
+							alt="pink circle"
+							class="icn-spinner icn-spinner-mobile"
+						/>
+					</div>
+					<img
+						src="./images/jo-poster.png"
+						alt="girls with a smile"
+						class="portrait-img"
+					/>
+				</div>
+				<footer class="footer">
+					<p><i class="fas fa-copyright"></i>2023, pinqpic</p>
+					<a href="https://www.instagram.com/pinqpic/" target="_blank"
+						><i class="fa-brands fa-instagram"></i
+					></a>
+				</footer>
+			</section>
+			<div class="sidebar">
+				<aside class="sidebar-overlay sidebar-overlay__version">
+					<div class="sidebar-close__wrapper">
+						<button class="sidebar-close">
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+
+					<ul class="sidebar-links">
+						<li>
+							<a href="index.html">home</a>
+						</li>
+						<li>
+							<a href="about.html">about</a>
+						</li>
+						<li>
+							<a href="gallery.html">gallery</a>
+						</li>
+						<li>
+							<a href="contact.html">contact</a>
+						</li>
+					</ul>
+				</aside>
+			</div>
+		</main>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+		<script type="module" src="about.js"></script>
 	</body>
 </html>
