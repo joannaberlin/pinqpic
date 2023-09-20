@@ -20,6 +20,20 @@ body {
 	}
 } */
 
+.text-bottom p {
+	font-size: 1em;
+	font-family: 'Abel', sans-serif;
+	color: var(--color-intense);
+}
+
+.text-bottom {
+	z-index: 1000;
+	position: absolute;
+	margin: auto;
+	top: 90%;
+	text-align: center;
+}
+
 .sidebar-overlay__version {
 	background-color: var(--color-intense);
 }
