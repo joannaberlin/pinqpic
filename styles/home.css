@@ -30,8 +30,9 @@ body {
 	z-index: 1000;
 	position: absolute;
 	margin: auto;
-	top: 90%;
+	top: 87%;
 	text-align: center;
+	align-items: center;
 }
 
 .sidebar-overlay__version {
