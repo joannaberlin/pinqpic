@@ -107,6 +107,33 @@ MEDIA QUERIES
 		font-size: 1.5em;
 	}
 
+	/* Hover Effect */
+	.img:hover {
+		cursor: pointer;
+	}
+
+	.img-hov-1 {
+		transition: 1s;
+		border: 5px solid var(--color-text);
+		background-color: var(--color-text);
+		scale: 1.8;
+		width: auto;
+		transform: translate(+40%, +30%);
+	}
+
+	.img-hov-1-reverse {
+		border: none;
+		background-color: transparent;
+		scale: 1;
+		transition: 1s;
+		transform: translate(0, 0);
+	}
+
+	.img-hov-2:hover {
+		scale: 1.3;
+		transform: translate(+30%, -20%);
+	}
+
 	/* Grid */
 	.container {
 		display: grid;

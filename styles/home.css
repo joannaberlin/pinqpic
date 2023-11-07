@@ -4,12 +4,12 @@ body {
 	overflow: hidden;
 }
 
-/* #img-1:hover {
+#img-1:hover {
 	content: url('../images/home/2-home-small-bw.jpg');
-} */
-/* #img-1:hover {
+}
+#img-1:hover {
 	animation: backgroundImage 11s infinite linear;
-} */
+}
 
 /* Color Version */
 /* .logo__version {
@@ -319,7 +319,7 @@ a:focus-visible {
 ANIMATIONS
 ===============
 */
-/*
+
 @keyframes backgroundImage {
 	0%,
 	100% {
@@ -341,7 +341,7 @@ ANIMATIONS
 		background-image: url('../images/home/Group-1/1-home-small-5-bw.jpg');
 	}
 }
-*/
+
 /*
 ===============
 MEDIA QUERIES
